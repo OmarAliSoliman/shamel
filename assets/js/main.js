@@ -155,6 +155,16 @@ $(document).ready(function () {
       arrows: false,
       centerMode: false,
       focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 524,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: true,
+          },
+        },
+      ],
     });
   }
 

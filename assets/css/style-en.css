@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
 input:focus,
 select:focus,
@@ -12,7 +12,8 @@ textarea:focus {
 }
 body {
   direction: ltr;
-  font-family: 'Ubuntu', sans-serif;}
+  font-family: "Ubuntu", sans-serif;
+}
 
 .clear {
   clear: both;
@@ -395,7 +396,7 @@ img {
   width: 100%;
   margin-top: 10px;
 }
-.search-and-search-result .card-search .search-form .btn-submit .btn:hover{
+.search-and-search-result .card-search .search-form .btn-submit .btn:hover {
   background-color: transparent;
   border: 1px solid #82d7cd;
   color: #82d7cd;
@@ -778,10 +779,11 @@ img {
   position: relative;
 }
 .show-ads .slider-top .item-slide img {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   margin: auto;
   height: 400px;
-  max-height: auto;
+  /* // max-height: 400px; */
 }
 .show-ads .slider-top .item-slide:focus {
   outline: 0 !important;
@@ -809,7 +811,8 @@ img {
   background-color: #000 !important;
 }
 .show-ads .slider-top .slick-next {
-  left: 5%;
+  /* left: 5%; */
+  right: 0;
   bottom: 0;
 }
 .show-ads .slider-top .slick-next::before {
@@ -1099,7 +1102,7 @@ img {
   border-radius: 5px;
 }
 
-.show-ads .add-comment .comment-form button:hover{
+.show-ads .add-comment .comment-form button:hover {
   background-color: transparent;
   color: #e2b833;
   border: 1px solid #e2b833;
@@ -1416,11 +1419,11 @@ footer .copy h5 {
     transform: none;
     margin-top: 25px;
   }
-    .new-ads-most-search .most-search .most-search-header{
-      height: auto;
-      padding-bottom: 20px;
-    }
-  .search-and-search-result .arange{
+  .new-ads-most-search .most-search .most-search-header {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .search-and-search-result .arange {
     position: unset;
   }
 }
