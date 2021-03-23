@@ -272,30 +272,29 @@ img {
   margin: 5px;
   font-size: 14px;
 }
-.new-ads-most-words .new-arrival {
-  position: relative;
-}
 .new-ads-most-words .new-arrival .head {
   text-align: right;
   border: 1px solid #fff;
   background-color: #fff;
   padding: 10px;
+  position: relative;
 }
-.new-ads-most-words .new-arrival .nav-pills {
+.new-ads-most-words .new-arrival .head .nav-pills {
   position: absolute;
-  top: 7px;
+  top: 50%;
   left: 5px;
+  transform: translate(0, -50%);
 }
-.new-ads-most-words .new-arrival .nav-pills .nav-link {
+.new-ads-most-words .new-arrival .head .nav-pills .nav-link {
   background-color: #fff;
   color: #626262;
-  padding: 2px;
+  padding: 5px;
   padding-right: 5px;
   padding-left: 5px;
   margin-left: 10px;
   font-size: 14px;
 }
-.new-ads-most-words .new-arrival .nav-pills .active {
+.new-ads-most-words .new-arrival .head .nav-pills .active {
   background-color: #626262;
   color: #fff;
 }
@@ -391,6 +390,11 @@ img {
   color: #fff;
   width: 100%;
   margin-top: 10px;
+}
+.search-and-search-result .card-search .search-form .btn-submit .btn:hover {
+  background-color: transparent;
+  border: 1px solid #82d7cd;
+  color: #82d7cd;
 }
 .search-and-search-result .new-ads-most-search {
   margin-top: 50px !important;
@@ -821,7 +825,7 @@ img {
   width: 53px;
   height: 53px;
   border-radius: 50%;
-  background-color: #EEF4F6;
+  background-color: #eef4f6;
   color: #82d7cd;
   text-align: center;
   line-height: 53px;
@@ -1059,6 +1063,11 @@ img {
   margin-top: 20px;
   border-radius: 5px;
 }
+.show-ads .add-comment .comment-form button:hover {
+  background-color: transparent;
+  color: #e2b833;
+  border: 1px solid #e2b833;
+}
 .show-ads .similar-ads-head {
   font-size: 16px;
   color: #82d7cd;
@@ -1077,7 +1086,7 @@ img {
   width: 100%;
   text-align: center;
   font-size: 20px;
-  background-color: #F8FBFB;
+  background-color: #f8fbfb;
 }
 .show-ads .related-ads h6 {
   margin-top: 15px;
@@ -1109,7 +1118,7 @@ img {
   color: #82d7cd;
 }
 .show-ads .related-ads .card-person-info .btn {
-  background-color: #66CDCD;
+  background-color: #66cdcd;
   color: #fff;
   margin-top: 10px;
   padding: 11px;
@@ -1123,7 +1132,7 @@ img {
   margin-top: 10px;
 }
 .show-ads .related-ads .send-msg a {
-  background-color: #A3E3CC;
+  background-color: #a3e3cc;
   color: #fff;
   padding: 11px;
 }
@@ -1364,6 +1373,12 @@ footer .copy h5 {
 
   .show-ads .ads-info .ads-header .share-add {
     position: unset;
+  }
+
+  .new-ads-most-words .new-arrival .head .nav-pills {
+    position: unset;
+    transform: none;
+    margin-top: 25px;
   }
 }
 .show-ads .slider-top .slick-prev::before, .show-ads .slider-top .slick-next::before {
