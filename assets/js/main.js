@@ -157,6 +157,9 @@ $(document).ready(function () {
       focusOnSelect: true,
     });
   }
+
+  $('select').select2();
+
 });
 
 $(function () {

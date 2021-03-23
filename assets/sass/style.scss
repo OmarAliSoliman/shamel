@@ -698,9 +698,6 @@ img {
             color: $mainColor;
           }
         }
-        .dropdown-menu {
-          text-align: left;
-        }
         .input-group-append {
           .btn {
             border-right: 0;
@@ -716,6 +713,14 @@ img {
         .form-control-input-prepent {
           border-top-left-radius: 0px;
           border-bottom-left-radius: 0px;
+        }
+        .select-country-prepend{
+          select{
+            background-color: #fafafa;
+            border: 1px solid #e9e9e9;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+          }
         }
       }
     }
@@ -1607,6 +1612,13 @@ footer {
     transform: none;
     margin-top: 25px;
   }
+  .new-ads-most-search .most-search .most-search-header{
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .search-and-search-result .arange{
+    position: unset;
+  }
 }
 
 %inilizeFontAwesome {
@@ -1641,3 +1653,4 @@ footer {
   text-align: center;
   background-color: $mainColor;
 }
+

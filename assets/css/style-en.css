@@ -1416,6 +1416,13 @@ footer .copy h5 {
     transform: none;
     margin-top: 25px;
   }
+    .new-ads-most-search .most-search .most-search-header{
+      height: auto;
+      padding-bottom: 20px;
+    }
+  .search-and-search-result .arange{
+    position: unset;
+  }
 }
 .show-ads .slider-top .slick-prev::before,
 .show-ads .slider-top .slick-next::before {

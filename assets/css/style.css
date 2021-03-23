@@ -594,9 +594,6 @@ img {
 .login-rigister .rigister-login-form .form-group .input-group .input-group-text i {
   color: #82d7cd;
 }
-.login-rigister .rigister-login-form .form-group .input-group .dropdown-menu {
-  text-align: left;
-}
 .login-rigister .rigister-login-form .form-group .input-group .input-group-append .btn {
   border-right: 0;
   border: 1px solid #e9e9e9;
@@ -610,6 +607,12 @@ img {
 .login-rigister .rigister-login-form .form-group .input-group .form-control-input-prepent {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
+}
+.login-rigister .rigister-login-form .form-group .input-group .select-country-prepend select {
+  background-color: #fafafa;
+  border: 1px solid #e9e9e9;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
 .login-rigister .rigister-login-form .remember {
   display: block;
@@ -1379,6 +1382,15 @@ footer .copy h5 {
     position: unset;
     transform: none;
     margin-top: 25px;
+  }
+
+  .new-ads-most-search .most-search .most-search-header {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .search-and-search-result .arange {
+    position: unset;
   }
 }
 .show-ads .slider-top .slick-prev::before, .show-ads .slider-top .slick-next::before {
