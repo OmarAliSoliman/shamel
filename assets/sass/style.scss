@@ -876,12 +876,13 @@ img {
   .slider-top {
     margin-top: -14px;
     .item-slide {
-      position: relative;
+        position: relative;
       img {
-        width: 100%;
+        width: auto;
+        max-width: 100%;
         margin: auto;
         height: 400px;
-        max-height: auto;
+        // max-height: 400px; 
       }
 
       &:focus {

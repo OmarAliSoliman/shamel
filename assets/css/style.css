@@ -746,10 +746,10 @@ img {
   position: relative;
 }
 .show-ads .slider-top .item-slide img {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   margin: auto;
   height: 400px;
-  max-height: auto;
 }
 .show-ads .slider-top .item-slide:focus {
   outline: 0 !important;
