@@ -175,6 +175,28 @@ img {
   }
 }
 
+
+.pagination{
+  overflow: auto;
+  margin-top: 40px;
+  .page-item{
+    .page-link{
+      border: 0;
+      color: $mainColor;
+    }
+  }
+  i{
+    color: $mainColor;
+  }
+  .active{
+    .page-link{
+      border-radius: 50%;
+      background-color: $mainColor;
+      color: #fff;
+    }
+  }
+}
+
 .header-slider {
   .slider-item {
     background-size: cover;

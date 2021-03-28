@@ -141,6 +141,24 @@ img {
   box-shadow: none;
 }
 
+.pagination {
+  overflow: auto;
+  margin-top: 40px;
+}
+.pagination .page-item .page-link {
+  border: 0;
+  color: #82d7cd;
+}
+.pagination i {
+  color: #82d7cd;
+  transform: rotate(180deg);
+}
+.pagination .active .page-link {
+  border-radius: 50%;
+  background-color: #82d7cd;
+  color: #fff;
+}
+
 .header-slider .slider-item {
   background-size: cover;
   height: 375px;
