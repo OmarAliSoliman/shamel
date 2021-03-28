@@ -159,8 +159,63 @@ img {
   }
 }
 
-.header {
-  position: relative;
+.login {
+  .dropdown {
+    .dropdown-toggle {
+      img {
+        width: 41px;
+        max-height: 41px;
+        border-radius: 5px;
+      }
+      &:focus {
+        outline: 0 !important;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.header-slider {
+  .slider-item {
+    background-size: cover;
+    height: 375px;
+    background-position: center;
+  }
+  .slick-prev{
+    left: 25px;
+    z-index: 9;
+    &::before{
+      content: "\f104";
+      @extend %inilizeFontAwesome;
+      width: 45px !important;
+      height: 85px !important;
+      display: inline-block;
+      background-color: #fff;
+      z-index: 9 !important;
+      line-height: 85px;
+      font-size: 20px;
+      text-align: center;
+      color: #000;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+  }
+  .slick-next{
+    right: 0;
+    &::before{
+      content: "\f105";
+      @extend %inilizeFontAwesome;
+      width: 45px !important;
+      height: 85px !important;
+      display: inline-block;
+      background-color: #fff;
+      z-index: 9 !important;
+      line-height: 85px;
+      font-size: 20px;
+      text-align: center;
+      color: #000;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+  }
 }
 
 .main-content {
@@ -459,7 +514,7 @@ img {
           color: #fff;
           width: 100%;
           margin-top: 10px;
-          &:hover{
+          &:hover {
             background-color: transparent;
             border: 1px solid $mainColor;
             color: $mainColor;
@@ -714,8 +769,8 @@ img {
           border-top-left-radius: 0px;
           border-bottom-left-radius: 0px;
         }
-        .select-country-prepend{
-          select{
+        .select-country-prepend {
+          select {
             background-color: #fafafa;
             border: 1px solid #e9e9e9;
             border-top-left-radius: 6px;
@@ -882,7 +937,7 @@ img {
         max-width: 100%;
         margin: auto;
         height: 400px;
-        // max-height: 400px; 
+        // max-height: 400px;
       }
 
       &:focus {
@@ -1276,7 +1331,7 @@ img {
         padding: 10px;
         margin-top: 20px;
         border-radius: 5px;
-        &:hover{
+        &:hover {
           background-color: transparent;
           color: #e2b833;
           border: 1px solid #e2b833;
@@ -1613,11 +1668,11 @@ footer {
     transform: none;
     margin-top: 25px;
   }
-  .new-ads-most-search .most-search .most-search-header{
+  .new-ads-most-search .most-search .most-search-header {
     height: auto;
     padding-bottom: 20px;
   }
-  .search-and-search-result .arange{
+  .search-and-search-result .arange {
     position: unset;
   }
 }
@@ -1654,4 +1709,3 @@ footer {
   text-align: center;
   background-color: $mainColor;
 }
-

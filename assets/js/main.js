@@ -1,11 +1,15 @@
 $(document).ready(function () {
 
+  var currentDir = $("a").css("direction");
+
+
   if($('.header-slider').length){
     $(".header-slider").slick({
       speed: 500,
       slidesToScroll: 1,
       autoplay: true,
-      dots: true,
+      rtl: currentDir == "rtl" ? true : false,
+      dots: false,
     });
   }
 
@@ -167,9 +171,6 @@ $(document).ready(function () {
       ],
     });
   }
-
-  $('select').select2();
-
 });
 
 $(function () {

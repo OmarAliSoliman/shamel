@@ -130,8 +130,53 @@ img {
   border-right: 1px solid #ddd;
 }
 
-.header {
-  position: relative;
+.login .dropdown .dropdown-toggle img {
+  width: 41px;
+  max-height: 41px;
+  border-radius: 5px;
+}
+.login .dropdown .dropdown-toggle:focus {
+  outline: 0 !important;
+  box-shadow: none;
+}
+
+.header-slider .slider-item {
+  background-size: cover;
+  height: 375px;
+  background-position: center;
+}
+.header-slider .slick-prev {
+  left: 25px;
+  z-index: 9;
+}
+.header-slider .slick-prev::before {
+  content: "";
+  width: 45px !important;
+  height: 85px !important;
+  display: inline-block;
+  background-color: #fff;
+  z-index: 9 !important;
+  line-height: 85px;
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.header-slider .slick-next {
+  right: 0;
+}
+.header-slider .slick-next::before {
+  content: "";
+  width: 45px !important;
+  height: 85px !important;
+  display: inline-block;
+  background-color: #fff;
+  z-index: 9 !important;
+  line-height: 85px;
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .main-content {
@@ -1393,6 +1438,11 @@ footer .copy h5 {
     position: unset;
   }
 }
+.header-slider .slick-prev::before, .header-slider .slick-next::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
 .show-ads .slider-top .slick-prev::before, .show-ads .slider-top .slick-next::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
