@@ -1613,6 +1613,34 @@ img {
   border: 1px solid #82d7cd;
 }
 
+.conditions {
+  margin-top: 52px;
+  margin-bottom: 100px;
+}
+.conditions h5 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.conditions ul li {
+  position: relative;
+  padding-right: 15px;
+}
+.conditions ul li p {
+  font-size: 16px;
+  line-height: 28px;
+}
+.conditions ul li::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #82d7cd;
+  border-radius: 50%;
+  right: 0;
+  top: 10px;
+}
+
 footer {
   background-image: linear-gradient(180deg, #66cdcd, #a3e3cc);
   padding-top: 100px;

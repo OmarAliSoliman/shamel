@@ -1877,6 +1877,36 @@ img {
   }
 }
 
+.conditions{
+  margin-top: 52px;
+  margin-bottom: 100px;
+  h5{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  ul{
+    li{
+      position: relative;
+      padding-right: 15px;
+      p{
+        font-size: 16px;
+        line-height: 28px;
+      }
+      &::before{
+        position: absolute;
+        content: "";
+        width: 8px;
+        height: 8px;
+        background-color: $mainColor;
+        border-radius: 50%;
+        right: 0;
+        top: 10px;
+      }
+    }
+  }
+}
+
 
 // satrt footer
 footer {
