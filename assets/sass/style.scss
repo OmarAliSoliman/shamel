@@ -175,21 +175,20 @@ img {
   }
 }
 
-
-.pagination{
+.pagination {
   overflow: auto;
   margin-top: 40px;
-  .page-item{
-    .page-link{
+  .page-item {
+    .page-link {
       border: 0;
       color: $mainColor;
     }
   }
-  i{
+  i {
     color: $mainColor;
   }
-  .active{
-    .page-link{
+  .active {
+    .page-link {
       border-radius: 50%;
       background-color: $mainColor;
       color: #fff;
@@ -203,10 +202,10 @@ img {
     height: 375px;
     background-position: center;
   }
-  .slick-prev{
+  .slick-prev {
     left: 25px;
     z-index: 9;
-    &::before{
+    &::before {
       content: "\f104";
       @extend %inilizeFontAwesome;
       width: 45px !important;
@@ -221,9 +220,9 @@ img {
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     }
   }
-  .slick-next{
+  .slick-next {
     right: 0;
-    &::before{
+    &::before {
       content: "\f105";
       @extend %inilizeFontAwesome;
       width: 45px !important;
@@ -735,6 +734,58 @@ img {
   }
 }
 
+.input-group {
+  .form-control {
+    border: 1px solid #e9e9e9;
+    border-right: 0;
+    background-color: #fafafa;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    &::placeholder {
+      color: #999;
+      font-size: 15px;
+    }
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+  .input-group-text {
+    border: 1px solid #e9e9e9;
+    border-left: 0;
+    background-color: #fafafa;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    i {
+      color: $mainColor;
+    }
+  }
+  .input-group-append {
+    .btn {
+      border-right: 0;
+      border: 1px solid #e9e9e9;
+      background-color: #fafafa;
+      color: #666;
+      &:focus {
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+  }
+  .form-control-input-prepent {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .select-country-prepend {
+    select {
+      background-color: #fafafa;
+      border: 1px solid #e9e9e9;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+  }
+}
+
 .login-rigister {
   margin-bottom: 70px;
   margin-top: 70px;
@@ -748,57 +799,6 @@ img {
     .form-group {
       .form-control {
         height: 55px;
-      }
-      .input-group {
-        .form-control {
-          border: 1px solid #e9e9e9;
-          border-right: 0;
-          background-color: #fafafa;
-          border-top-left-radius: 10px;
-          border-bottom-left-radius: 10px;
-          &::placeholder {
-            color: #999;
-            font-size: 15px;
-          }
-          &:focus {
-            outline: 0;
-            box-shadow: none;
-          }
-        }
-        .input-group-text {
-          border: 1px solid #e9e9e9;
-          border-left: 0;
-          background-color: #fafafa;
-          border-top-right-radius: 10px;
-          border-bottom-right-radius: 10px;
-          i {
-            color: $mainColor;
-          }
-        }
-        .input-group-append {
-          .btn {
-            border-right: 0;
-            border: 1px solid #e9e9e9;
-            background-color: #fafafa;
-            color: #666;
-            &:focus {
-              outline: 0;
-              box-shadow: none;
-            }
-          }
-        }
-        .form-control-input-prepent {
-          border-top-left-radius: 0px;
-          border-bottom-left-radius: 0px;
-        }
-        .select-country-prepend {
-          select {
-            background-color: #fafafa;
-            border: 1px solid #e9e9e9;
-            border-top-left-radius: 6px;
-            border-bottom-left-radius: 6px;
-          }
-        }
       }
     }
 
@@ -1440,6 +1440,35 @@ img {
   }
 }
 
+.reset-passowrd {
+  .reset-pass-card {
+    background-color: #fff;
+    box-shadow: 0 3px 68px rgba(0, 0, 0, 9%);
+    padding: 50px;
+    width: 50%;
+    margin: auto;
+    margin-top: 74px;
+    margin-bottom: 100px;
+    h5 {
+      text-align: center;
+      margin-bottom: 56px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  form {
+    .form-control {
+      height: 50px;
+    }
+    .btn {
+      background-color: $mainColor;
+      color: #fff;
+      padding: 12px;
+      margin-top: 34px;
+    }
+  }
+}
+
 // satrt footer
 footer {
   background-image: linear-gradient(180deg, #66cdcd, #a3e3cc);
@@ -1637,6 +1666,11 @@ footer {
   }
   .search-bar form img {
     width: 6.5% !important;
+  }
+  .reset-passowrd {
+    .reset-pass-card {
+      width: 100%;
+    }
   }
 }
 
