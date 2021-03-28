@@ -1622,13 +1622,13 @@ img {
   margin-bottom: 30px;
   font-size: 20px;
 }
+.conditions p {
+  font-size: 16px;
+  line-height: 28px;
+}
 .conditions ul li {
   position: relative;
   padding-right: 15px;
-}
-.conditions ul li p {
-  font-size: 16px;
-  line-height: 28px;
 }
 .conditions ul li::before {
   position: absolute;
