@@ -1979,6 +1979,109 @@ img {
 }
 
 
+.payment{
+  margin-top: 53px;
+  margin-bottom: 100px;
+  .payment-header{
+    margin-bottom: 52px;
+    text-align: center;
+  }
+  .payment-info{
+    width: 50%;
+    margin: auto;
+  }
+  .bank{
+    background-color: #EEF4F6;
+    border: 0;
+    padding: 20px;
+    position: relative;
+    padding-right:140px;
+    .card-img{
+      max-width: 102px;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translate(0, -50%);
+      max-height: 102px;
+    }
+    .card-title{
+      margin: 0;
+    }
+  }
+  .payment-form{
+    margin-top: 28px;
+    padding: 20px;
+    box-shadow: 0 3px 68px rgba(0, 0, 0, 9%);
+    h5{
+      font-size: 14px;
+      margin-bottom: 26px;
+    }
+    .form-group{
+      margin-bottom: 20px;
+      .form-control{
+        height: 50px;
+        background-color: #FBFBFB;
+        border-radius: 10px;
+        border: 1px solid #F4F4F4;
+        &:focus{
+          outline: 0 !important;
+          box-shadow: none !important;
+        }
+        &::placeholder{
+          font-size: 13px;
+        }
+      }
+    }
+    .file-name-delete{
+      color: red;
+      cursor: pointer;
+      margin-top: 5px;
+      display: none;
+    }
+    .input-group{
+      .custom-file-input{
+        &:focus{
+          outline: 0 !important;
+          box-shadow: none !important;
+        }
+      }
+      .custom-file-label{
+        height: 50px;
+        background-color: #FBFBFB;
+        border-radius: 10px;
+        border: 1px solid #F4F4F4;
+        line-height: 35px;
+        &:focus{
+          outline: 0 !important;
+          box-shadow: none !important;
+        }
+      }
+    }
+    .custom-file-label::after{
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      line-height: 40px;
+      content: "\f0c1";
+      height: 50px;
+      background-color: $mainColor;
+      color: #fff;
+    }
+    .btn{
+      background-color: $mainColor;
+      color: #fff;
+      margin-top: 73px;
+      padding: 10px;
+      &:hover{
+        background-color: #fff;
+        color: $mainColor;
+        border: 1px solid $mainColor;
+      }
+    }
+  }
+}
+
+
+
 // satrt footer
 footer {
   background-image: linear-gradient(180deg, #66cdcd, #a3e3cc);
@@ -2195,6 +2298,9 @@ footer {
   .advertisment-fee .advertisment-fee-card{
     width: 100%;
   }
+  .payment .payment-info{
+    width: 100%;
+  }
 }
 
 @media (max-width: 524px) {
@@ -2259,6 +2365,16 @@ footer {
   }
   .advertisment-fee .advertisment-fee-card form{
     width: 100%;
+  }
+  .payment .bank{
+    padding-right: 0;
+    text-align: center;
+  }
+  .payment .bank .card-img{
+    position: unset;
+    transform: translate(0);
+    margin: auto;
+    margin-bottom: 10px;
   }
 }
 

@@ -202,6 +202,21 @@ $(document).ready(function () {
     });
   }
 
+  if($('.payment-form').length){
+    var labelText = $('.payment-form .custom-file-label').text();
+    $('.payment-form .custom-file-input').on('change', function(e){
+      var fileName = e.target.files[0].name;
+      $(this).closest('.form-group').find('.custom-file-label').text(fileName);
+      $(this).closest('.form-group').find('.file-name-delete').css('display', 'block');  
+      })
+
+    $('.file-name-delete').on('click', function(){
+      $(this).css('display', 'none');
+      $(this).closest('.form-group').find('.custom-file-label').text(labelText);
+      $(this).closest('.form-group').find('.custom-file-input').val('');
+    })
+  }
+
 });
 
 $(function () {
