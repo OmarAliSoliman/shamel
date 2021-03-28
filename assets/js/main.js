@@ -171,6 +171,37 @@ $(document).ready(function () {
       ],
     });
   }
+
+  if ($(".personal-img").length) {
+    $(document).on("change", ".personal-img-file", function () {
+      var uploadFile = $(this);
+      var files = !!this.files ? this.files : [];
+      if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+
+      if (/^image/.test(files[0].type)) {
+        // only image file
+        var reader = new FileReader(); // instance of the FileReader
+        reader.readAsDataURL(files[0]); // read the local file
+
+        reader.onloadend = function () {
+          // set image data as background of div
+          //alert(uploadFile.closest(".upimage").find('.imagePreview').length);
+          uploadFile
+            .closest(".personal-img")
+            .find(".per")
+            .css("background-image", "url(" + this.result + ")");
+          $(".personal-img-validation-delete").css("display", "block");
+        };
+      }
+    });
+
+    $(document).on("click", ".personal-img-validation-delete", function () {
+      $(this).closest(".personal-img").find(".per").css("background-image", "url('./assets/images/avatar.png')");
+      $(this).css("display", "none");
+      $(this).closest(".personal-img").find('.personal-img-file').val('');
+    });
+  }
+
 });
 
 $(function () {
