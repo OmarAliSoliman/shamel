@@ -1907,6 +1907,77 @@ img {
   }
 }
 
+  .advertisment-fee{
+    margin-top: 53px;
+    margin-bottom: 85px;
+    .advertisment-fee-card{
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    h5{
+      margin-bottom: 32px;
+    }
+    p{
+      font-size: 16px;
+    }
+    form{
+      width: 70%;
+      margin: auto;
+      margin-top: 31px;
+      .card{
+        background-color: #F4FCFC;
+        border: 1px solid $mainColor;
+        position: relative;
+        height: 70px;
+        text-align: right;
+        padding: 10px;
+        .card-title{
+          color: #000;
+          line-height: 40px;
+          position: relative;
+          padding-right: 10px;
+          &::before{
+            position: absolute;
+            content: "";
+            width: 7px;
+            height: 18px;
+            border-radius: 5px;
+            background-color: $mainColor;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+          }
+        }
+        .price{
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          transform: translate(0, -50%);
+          font-size: 28px;
+          color: $mainColor;
+          font-weight: bold;
+          span{
+            font-size: 14px;
+            color: #000;
+            font-weight: normal;
+          }
+        }
+      }
+      .btn{
+        background-color: $mainColor;
+        color: #fff;
+        margin-top: 31px;
+        height: 55px;
+        &:hover{
+          background-color: #fff;
+          color: $mainColor;
+          border: 1px solid $mainColor;
+        }
+      }
+    }
+  }
+}
+
 
 // satrt footer
 footer {
@@ -2121,6 +2192,9 @@ footer {
   .chat-page .message-content .card{
     width: 100%;
   }
+  .advertisment-fee .advertisment-fee-card{
+    width: 100%;
+  }
 }
 
 @media (max-width: 524px) {
@@ -2182,6 +2256,9 @@ footer {
   }
   .chat-page .message-content-parent{
     margin-top: 20px;
+  }
+  .advertisment-fee .advertisment-fee-card form{
+    width: 100%;
   }
 }
 

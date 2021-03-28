@@ -1730,13 +1730,13 @@ img {
   margin-bottom: 30px;
   font-size: 20px;
 }
-.conditions ul li {
-  position: relative;
-  padding-left: 15px;
-}
-.conditions ul li p {
+.conditions p {
   font-size: 16px;
   line-height: 28px;
+}
+.conditions ul li {
+  position: relative;
+  padding-right: 15px;
 }
 .conditions ul li::before {
   position: absolute;
@@ -1745,7 +1745,7 @@ img {
   height: 8px;
   background-color: #82d7cd;
   border-radius: 50%;
-  left: 0;
+  right: 0;
   top: 10px;
 }
 

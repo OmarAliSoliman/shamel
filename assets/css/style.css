@@ -1641,6 +1641,77 @@ img {
   top: 10px;
 }
 
+.advertisment-fee {
+  margin-top: 53px;
+  margin-bottom: 85px;
+}
+.advertisment-fee .advertisment-fee-card {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+.advertisment-fee .advertisment-fee-card h5 {
+  margin-bottom: 32px;
+}
+.advertisment-fee .advertisment-fee-card p {
+  font-size: 16px;
+}
+.advertisment-fee .advertisment-fee-card form {
+  width: 70%;
+  margin: auto;
+  margin-top: 31px;
+}
+.advertisment-fee .advertisment-fee-card form .card {
+  background-color: #F4FCFC;
+  border: 1px solid #82d7cd;
+  position: relative;
+  height: 70px;
+  text-align: right;
+  padding: 10px;
+}
+.advertisment-fee .advertisment-fee-card form .card .card-title {
+  color: #000;
+  line-height: 40px;
+  position: relative;
+  padding-right: 10px;
+}
+.advertisment-fee .advertisment-fee-card form .card .card-title::before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 18px;
+  border-radius: 5px;
+  background-color: #82d7cd;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.advertisment-fee .advertisment-fee-card form .card .price {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 28px;
+  color: #82d7cd;
+  font-weight: bold;
+}
+.advertisment-fee .advertisment-fee-card form .card .price span {
+  font-size: 14px;
+  color: #000;
+  font-weight: normal;
+}
+.advertisment-fee .advertisment-fee-card form .btn {
+  background-color: #82d7cd;
+  color: #fff;
+  margin-top: 31px;
+  height: 55px;
+}
+.advertisment-fee .advertisment-fee-card form .btn:hover {
+  background-color: #fff;
+  color: #82d7cd;
+  border: 1px solid #82d7cd;
+}
+
 footer {
   background-image: linear-gradient(180deg, #66cdcd, #a3e3cc);
   padding-top: 100px;
@@ -1836,6 +1907,10 @@ footer .copy h5 {
   .chat-page .message-content .card {
     width: 100%;
   }
+
+  .advertisment-fee .advertisment-fee-card {
+    width: 100%;
+  }
 }
 @media (max-width: 524px) {
   .upper-nav .login ul {
@@ -1908,6 +1983,10 @@ footer .copy h5 {
 
   .chat-page .message-content-parent {
     margin-top: 20px;
+  }
+
+  .advertisment-fee .advertisment-fee-card form {
+    width: 100%;
   }
 }
 .header-slider .slick-prev::before, .header-slider .slick-next::before {
