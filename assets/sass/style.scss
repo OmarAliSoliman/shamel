@@ -1819,6 +1819,65 @@ img {
   }
 }
 
+
+.contact-us-page{
+  margin-top: 74px;
+  margin-bottom: 94px;
+  h5{
+    margin-bottom: 34px;
+    font-size: 20px;
+  }
+  p{
+    font-size: 16px;
+    margin-bottom: 23px;
+  }
+  .con{
+    margin-bottom: 10px;
+    i{
+      color: $mainColor;
+    }
+    span{
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+  .contact-us-form{
+    background-color: #fff;
+    box-shadow: 0 3px 68px rgba(0, 0, 0, 9%);
+    padding: 20px;
+    .form-control{
+      height: 50px;
+      background-color: #FAFAFA;
+      &::placeholder{
+        font-size: 13px;
+        color: rgb(180, 180, 180);
+      }
+    }
+    .row{
+      .col-lg-6, .col-lg-12{
+        padding: 5px;
+      }
+    }
+    .input-group{
+      .form-control{
+        height: 50px;
+      }
+    }
+    .btn{
+      width: 255px;
+      padding: 10px;
+      background-color: $mainColor;
+      color: #fff;
+      &:hover{
+        background-color: #fff;
+        color: $mainColor;
+        border: 1px solid $mainColor;
+      }
+    }
+  }
+}
+
+
 // satrt footer
 footer {
   background-image: linear-gradient(180deg, #66cdcd, #a3e3cc);
