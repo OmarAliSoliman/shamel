@@ -1427,6 +1427,246 @@ img {
   background-color: #000;
 }
 
+.my-account .messages .card {
+  position: relative;
+  padding-right: 80px !important;
+}
+.my-account .messages .card-img {
+  width: 58px;
+  height: 57px;
+  border-radius: 6px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.chat-page {
+  margin-top: 70px;
+}
+.chat-page .my-account-navs {
+  margin-top: 0 !important;
+}
+.chat-page .message-content-parent {
+  border-radius: 20px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.chat-page .message-content-parent .card-header {
+  height: 60px;
+  position: relative;
+  background-color: transparent;
+}
+.chat-page .message-content-parent .card-header .return {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-decoration: none;
+}
+.chat-page .message-content-parent .card-header .return i {
+  color: #000;
+}
+.chat-page .message-content-parent .card-header .card-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translate(0, -50%);
+}
+.chat-page .message-content-parent .card-header h5 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 95px;
+  transform: translate(0, -50%);
+  font-size: 14px;
+}
+.chat-page .message-content-parent .card-header i{
+  transform: rotate(180deg);
+}
+.chat-page .message-content-parent .card-header-name {
+  background-color: #F5F5F5;
+  height: 50px;
+}
+.chat-page .message-content-parent .card-header-name h5 {
+  position: unset;
+  transform: none;
+  font-size: 18px;
+}
+.chat-page .message-content-parent .card-show-adver {
+  background-color: #fff;
+  box-shadow: 0 3px 68px rgba(0, 0, 0, 0.09);
+  position: relative;
+  height: 100px;
+  border: 0;
+  width: 97%;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  padding-left: 98px;
+}
+.chat-page .message-content-parent .card-show-adver .car-img {
+  width: 78px;
+  height: 77px;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+}
+.chat-page .message-content-parent .card-show-adver .card-title {
+  font-size: 16px;
+  width: 30%;
+  margin-top: 10px;
+}
+.chat-page .message-content-parent .card-show-adver .card-text {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 12px;
+}
+.chat-page .message-content {
+  padding: 25px;
+  height: auto;
+  max-height: 370px;
+  overflow: auto;
+}
+.chat-page .message-content .card {
+  width: 50%;
+  border: 0;
+  margin-bottom: 20px;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  border-bottom-left-radius: 32px;
+}
+.chat-page .message-content .card h5 {
+  color: #59bb66;
+  font-size: 16px;
+  padding: 12px;
+  margin: 0;
+  padding-right: 0;
+}
+.chat-page .message-content .card .card-body {
+  padding: 0;
+  color: #fff;
+  padding: 18px;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  border-bottom-left-radius: 32px;
+}
+.chat-page .message-content .card .card-body .card-text {
+  margin: 0;
+  font-size: 13px;
+  color: #626262;
+}
+.chat-page .message-content .card .time {
+  font-size: 13px !important;
+  color: #585858;
+}
+.chat-page .message-content .send {
+  margin-left: auto;
+}
+.chat-page .message-content .send .card-body {
+  background-color: #f3f3f3;
+}
+.chat-page .message-content .reseive {
+  margin-right: auto;
+  position: relative;
+  margin-bottom: 40px;
+}
+.chat-page .message-content .reseive .card-body {
+  background-color: #82d7cd;
+}
+.chat-page .message-content .reseive .card-body .card-text {
+  color: #fff !important;
+}
+.chat-page .message-content .reseive .time {
+  font-size: 13px !important;
+  margin-left: auto;
+  float: left;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+}
+.chat-page .message-form {
+  height: 60px;
+  width: 95%;
+  margin: auto;
+}
+.chat-page .message-form .fa-arrow-left {
+  color: #82d7cd;
+  font-size: 20px;
+  transform: rotate(180deg);
+}
+.chat-page .message-form .input-group {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 15px;
+}
+.chat-page .message-form .input-group .input-group-append {
+  border: 1px solid #ddd;
+  border-left: 0 !important;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 40px;
+}
+.chat-page .message-form .input-group .input-group-append .btn{
+  background-color: #82D7CD;
+  border-radius: 6px;
+
+}
+
+.chat-page .message-form .input-group .input-group-append .btn   i{
+  color: #fff;
+}
+.chat-page .message-form .input-group .input-group-prepend,
+.chat-page .message-form .input-group .form-control {
+  height: 40px;
+  background-color: transparent;
+  border: 0;
+  border: 1px solid #ddd;
+  border-right: 0 !important;
+  height: 40px;
+}
+.chat-page .message-form .input-group .input-group-prepend:focus,
+.chat-page .message-form .input-group .form-control:focus {
+  box-shadow: none !important;
+}
+.chat-page .message-form .input-group .input-group-text {
+  background-color: transparent;
+  text-decoration: none;
+}
+.chat-page .message-form .input-group .input-group-text i {
+  color: #82d7cd;
+  font-size: 24px;
+  /* transform: rotate(180deg); */
+}
+
+.chat-page .message-card .card .card-body {
+  position: relative;
+}
+.chat-page .message-card .card .card-body .sender-img {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
 footer {
   background-image: linear-gradient(-180deg, #66cdcd, #a3e3cc);
   padding-top: 100px;
@@ -1608,6 +1848,18 @@ footer .copy h5 {
   .reset-passowrd .reset-pass-card{
     width: 100%;
   }
+  .chat-page .message-content-parent .card-show-adver .card-title {
+    width: 100%;
+  }
+
+  .chat-page .message-content-parent .card-show-adver .card-text {
+    top: 99%;
+    transform: translate(0, -99%);
+  }
+
+  .chat-page .message-content .card {
+    width: 100%;
+  }
 }
 @media (max-width: 524px) {
   .upper-nav .login ul {
@@ -1673,6 +1925,9 @@ footer .copy h5 {
   }
   .search-and-search-result .arange {
     position: unset;
+  }
+  .chat-page .message-content-parent {
+    margin-top: 20px;
   }
 }
 .show-ads .slider-top .slick-prev::before,
