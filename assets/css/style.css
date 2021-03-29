@@ -2162,6 +2162,20 @@ footer .copy h5 {
     transform: translate(0);
     margin-bottom: 10px;
   }
+
+  .advertisment-fee .advertisment-fee-card {
+    width: 100%;
+  }
+
+  .advertisment-fee .advertisment-fee-card form .card {
+    height: auto;
+    text-align: center;
+  }
+
+  .advertisment-fee .advertisment-fee-card form .card .price {
+    position: unset;
+    margin-top: 10px;
+  }
 }
 .header-slider .slick-prev::before, .header-slider .slick-next::before {
   font-family: "Font Awesome 5 Free";

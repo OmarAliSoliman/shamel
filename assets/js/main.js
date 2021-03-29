@@ -217,6 +217,35 @@ $(document).ready(function () {
     })
   }
 
+
+  if (
+    typeof window.location.hash != "undefined" &&
+    window.location.hash == "#account-info"
+  ) {
+    $("#v-pills-home-tab").click();
+  }
+
+  if (
+    typeof window.location.hash != "undefined" &&
+    window.location.hash == "#account-ads"
+  ) {
+    $("#v-pills-profile-tab").click();
+  }
+
+  if (
+    typeof window.location.hash != "undefined" &&
+    window.location.hash == "#fav-ads"
+  ) {
+    $("#v-pills-messages-tab").click();
+  }
+
+  if (
+    typeof window.location.hash != "undefined" &&
+    window.location.hash == "#my-msg"
+  ) {
+    $("#v-pills-settings-tab").click();
+  }
+
 });
 
 $(function () {

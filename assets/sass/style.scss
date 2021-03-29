@@ -2437,6 +2437,17 @@ footer {
     transform: translate(0);
     margin-bottom: 10px;
   }
+  .advertisment-fee .advertisment-fee-card{
+    width: 100%;
+  }
+  .advertisment-fee .advertisment-fee-card form .card{
+    height: auto;
+    text-align: center;
+  }
+  .advertisment-fee .advertisment-fee-card form .card .price{
+    position: unset;
+    margin-top: 10px;
+  }
 }
 
 %inilizeFontAwesome {

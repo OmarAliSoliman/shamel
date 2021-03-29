@@ -1429,7 +1429,7 @@ img {
 
 .my-account .messages .card {
   position: relative;
-  padding-right: 80px !important;
+  padding-left: 80px !important;
 }
 .my-account .messages .card-img {
   width: 58px;
@@ -1736,7 +1736,7 @@ img {
 }
 .conditions ul li {
   position: relative;
-  padding-right: 15px;
+  padding-left: 15px;
 }
 .conditions ul li::before {
   position: absolute;
@@ -1745,7 +1745,7 @@ img {
   height: 8px;
   background-color: #82d7cd;
   border-radius: 50%;
-  right: 0;
+  left: 0;
   top: 10px;
 }
 
@@ -2252,6 +2252,16 @@ footer .copy h5 {
     position: unset;
     transform: translate(0);
     margin-bottom: 10px;
+  }
+  .advertisment-fee .advertisment-fee-card{
+    width: 100%;
+  }
+  .advertisment-fee .advertisment-fee-card form .card{
+    height: auto;
+    text-align: center;
+  }
+  .advertisment-fee .advertisment-fee-card form .card .price{
+    position: unset;
   }
 }
 .show-ads .slider-top .slick-prev::before,
