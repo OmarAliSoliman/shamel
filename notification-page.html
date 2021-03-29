@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
   <!-- start header -->
   <div class="top-header">
     <div class="container">
@@ -55,53 +54,46 @@
           </div>
         </div>
         <div class="col-sm-12 col-lg-6">
-          <!-- <div class="login">
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="./account.html" class="btn btn-login"><i class="fas fa-user"></i>تسجيل الدخول</a>
-                      <a href="./account.html" class="btn btn-rigister"><i class="fas fa-plus"></i>تسجيل جديد</a>
-                    </li>
-                    <li>
-                      <a href="./ads-page.html" class="btn btn-add-ads">اضف اعلان جديد</a>
-                    </li>
-                  </ul>
-                </div> -->
-
           <div class="login">
             <ul class="list-unstyled">
               <li>
-                <div class="btn btn-login dropdown account-drop-down">
-                  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <img src="./assets/images/selleer.png" alt="">
-                    محمد عبدالرحمن
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">
-                      <i class="fas fa-envelope"></i>
-                      الرسائل
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      <i class="fas fa-bell"></i>
-                      الاشعارات
-                    </a>
-                    <a class="dropdown-item" href="#">
-                      <i class="fas fa-box"></i>
-                      الاعلانات
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">
-                      <i class="fas fa-sign-out-alt"></i>
-                      تسجيل الخروج
-                    </a>
-                  </div>
-                </div>
+                <a href="./account.html" class="btn btn-login"><i class="fas fa-user"></i>تسجيل الدخول</a>
+                <a href="./account.html" class="btn btn-rigister"><i class="fas fa-plus"></i>تسجيل جديد</a>
               </li>
               <li>
                 <a href="./ads-page.html" class="btn btn-add-ads">اضف اعلان جديد</a>
               </li>
             </ul>
           </div>
+
+          <!-- <div class="login">
+              <div class="hello">
+                <h5>
+                  <i class="far fa-user"></i>
+                  مرحبا بكم omar
+                </h5>
+              </div>
+              <ul class="list-unstyled">
+                <li>
+                  <div class="btn btn-login dropdown account-drop-down">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-user"></i>
+                      حسابي
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">الرسائل</a>
+                      <a class="dropdown-item" href="#">الاشعارات</a>
+                      <a class="dropdown-item" href="#">الاعلانات</a>
+                    </div>
+                  </div>
+                  <a href="" class="btn btn-rigister"><i class="fas fa-sign-out-alt"></i>تسجيل الخروج</a>
+                </li>
+                <li>
+                  <a href="./ads-page.html" class="btn btn-add-ads">اضف اعلان جديد</a>
+                </li>
+              </ul>
+            </div> -->
         </div>
       </div>
     </div>
@@ -149,57 +141,67 @@
   </div>
   <!-- end header slider -->
 
-  <div class="payment">
-    <div class="container">
-      <h5 class="payment-header">دفع الرسوم</h5>
-      <div class="payment-info">
-        <div class="card bank">
-          <div class="card-img"><img src="./assets/images/bank.png" alt=""></div>
-          <h5 class="card-title">مصرف الراجحي</h5>
-          <p class="card-text">
-          <table>
-            <tr>
-              <td>رقم الحساب</td>
-              <td>121524541</td>
-            </tr>
-            <tr>
-              <td>رقم الحساب</td>
-              <td>1232</td>
-            </tr>
-          </table>
-          </p>
-        </div>
-        <div class="payment-form">
-          <h5>فضلا أدخل البيانات التالية</h5>
-          <div class="row">
-            <div class="col-sm-12 col-lg-12">
-              <div class="form-group">
-                <input type="text" name="" id="" class="form-control" placeholder="اسم البنك المحول اليه">
-              </div>
-            </div>
-            <div class="col-sm-12 col-lg-12">
-              <div class="form-group">
-                <input type="text" name="" id="" class="form-control" placeholder="اسم صاحب الحساب">
-              </div>
-            </div>
-            <div class="col-sm-12 col-lg-12">
-              <div class="form-group">
-                <div class="input-group mb-3">
-                  <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="inputGroupFile03">
-                    <label class="custom-file-label" for="inputGroupFile03">صورة الدولة</label>
-                  </div>
-                </div>
-                <h5 class="file-name-delete">حذف</h5>
-              </div>
-            </div>
-            <div class="col-sm-12 col-lg-12">
-              <div class="form-group">
-                <button type="submit" class="btn btn-block">ارسال</button>
-              </div>
-            </div>
-          </div>
-        </div>
+
+  <div class="notifaction-page">
+    <h5 class="notification-page-header">الاشعارات الواردة</h5>
+    <div class="notification-cards">
+      <div class="container">
+        <ul class="notification-li list-unstyled">
+          <li class="active">
+            <a href="">
+              <i class="far fa-bell"></i>
+              <span class="notification-content"> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
+                النص
+                من مولد النص العربى، حيث يمكنك
+                أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق </span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="">
+              <i class="far fa-bell"></i>
+              <span class="notification-content"> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
+                النص
+                من مولد النص العربى، حيث يمكنك
+                أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق </span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="far fa-bell"></i>
+              <span class="notification-content"> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
+                النص
+                من مولد النص العربى، حيث يمكنك
+                أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق </span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="far fa-bell"></i>
+              <span class="notification-content"> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
+                النص
+                من مولد النص العربى، حيث يمكنك
+                أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق </span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="far fa-bell"></i>
+              <span class="notification-content"> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
+                النص
+                من مولد النص العربى، حيث يمكنك
+                أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق </span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="far fa-bell"></i>
+              <span class="notification-content"> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
+                النص
+                من مولد النص العربى، حيث يمكنك
+                أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق </span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
